@@ -1,0 +1,10 @@
+module mux2x1 (
+    input wire I0,
+    input wire I1,
+    input wire S,
+    output wire Y
+);
+
+assign Y = (S == 1'b0) ? I0 : I1;
+
+endmodule
